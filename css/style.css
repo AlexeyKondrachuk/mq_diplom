@@ -1186,6 +1186,7 @@ background: transparent;
 
   .trend {
     width: calc(50% - 2px);
+    min-height: 246px;
    
     
   }
@@ -1477,6 +1478,7 @@ input[type="radio"]:not(:checked)+label {
   .trend {
     width: 100%;
     max-width: 360px;
+    min-height: 231px;
   }
 
   .img_trend {
