@@ -838,8 +838,13 @@ h4 {
 }
 
 
+
 .popup-hidden {
-  display: none;
+ visibility: hidden;
+}
+
+.wrap-form {
+  display: flex;
   position: fixed;
   top: 0;
   right: 0;
@@ -852,8 +857,6 @@ h4 {
   z-index: 6;
   background-color: rgb(0,0,0, .6);
 }
-
-
 
 
 .form-popup {
@@ -876,7 +879,20 @@ h4 {
   
 }
 
-
+.form-popup::after {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  z-index: 8;
+  background-color: rgb(0,0,0, .6);
+}
 
 .treds-headers-popup {
   width: 100%;
